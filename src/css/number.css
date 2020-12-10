@@ -1,0 +1,90 @@
+.block {
+  width: 19.89px;
+  height: 30px;
+  background-color: black;
+  position: relative;
+}
+
+.block::before {
+  content: '';
+  position: absolute;
+  border-width: 10px;
+  border-color: transparent transparent black transparent;
+  border-style: solid;
+  bottom: 98.87%;
+}
+
+.block::after {
+  content: '';
+  position: absolute;
+  border-width: 10px;
+  border-color: black transparent transparent transparent;
+  border-style: solid;
+  top: 99%;
+}
+
+.numberContainer {
+  width: 100px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  position: relative;
+}
+
+.number .block.one {
+  display: block;
+  position: absolute;
+  transition: display 1s ease;
+}
+
+.number .block.two {
+  display: block;
+  position: absolute;
+  top: 49px;
+  transition: display 1s ease;
+}
+
+.number .block.three {
+  display: block;
+  position: absolute;
+  left: 53px;
+}
+
+.number .block.four {
+  display: block;
+  position: absolute;
+  top: 49px;
+  left: 53px;
+}
+
+.number .block.five {
+  display: block;
+  position: absolute;
+  transform: rotate(90deg);
+  height: 29px;
+  left: 26.5px;
+  top: -24.6px;
+}
+
+.number .block.six {
+  display: block;
+  position: absolute;
+  transform: rotate(90deg);
+  height: 29px;
+  left: 26.5px;
+  top: 25px;
+}
+
+.number .block.seven {
+  display: block;
+  position: absolute;
+  transform: rotate(90deg);
+  height: 29px;
+  left: 26.5px;
+  top: 74px;
+}
